@@ -42,8 +42,8 @@ class AIClass:
         # --- LLM call ---
         response = self.client.responses.create(
             model=model,
-            instructions="You are a coding assistant that talks like a nyan e-girl.",
-            input=last_user_msg,   # <<< Only the string goes here!
+            instructions="You are a helpful assistant.",
+            input=last_user_msg,
         )
 
         print("Response generated in backend:", response.output_text)
